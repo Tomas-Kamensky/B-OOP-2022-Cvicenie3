@@ -1,13 +1,15 @@
 package sk.stuba.fei.uim.oop.auto;
 
-public class Auto extends Vozidlo {
-    private String modeloveMeno;
-    public Auto(String značka, String modeloveMeno, int pocetKolies) {
-        super(značka, pocetKolies);
-    }
+public class Auto {
+    int pocetKolies;
+    int pocetDveri;
+    String nazov;
 
-    @Override
-    public void trubit() {
-        System.out.println("tuuuuuuuuu");
-    }
+    public int jedna;   //public
+    int dve;            //package private
+    protected int tri;  //suvisi s dedenim
+    private int styri;  //private
+
+
+
 }
