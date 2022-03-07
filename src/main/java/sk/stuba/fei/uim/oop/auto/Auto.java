@@ -4,19 +4,10 @@ import javax.print.attribute.standard.PrinterMakeAndModel;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Auto {
-    private Scanner scanner;
-    private Random random;
+public class Auto extends Vozidlo {
 
-    public Auto(){
-        this.scanner = new Scanner(System.in);
-        this.random = new Random();
-    }
+    public Auto(String znacka, String model,int pocetKolies) {
+        super(znacka, pocetKolies);
 
-    public void nacitaj(){
-        String meno = scanner.nextLine();
-        System.out.println("Nacital som: "+meno);
-
-        int nahodneCislo = random.nextInt(101); //nahodne cislo od 0 do 100
     }
 }
