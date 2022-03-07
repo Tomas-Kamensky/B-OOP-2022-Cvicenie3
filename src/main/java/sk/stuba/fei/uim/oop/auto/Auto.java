@@ -2,6 +2,8 @@ package sk.stuba.fei.uim.oop.auto;
 
 public class Auto {
     public static final double PALIVO_NA_KM = 0.2;
+    public static final double KAPACITA_NADRZE = 100;
+
 
     private double kapacitaNadrze;
     private double stavNadrze;
@@ -13,6 +15,17 @@ public class Auto {
         if(stavNadrze < 0){
             stavNadrze = 0;
         }
+    }
+
+    public Auto() {
+        this(KAPACITA_NADRZE);
+
+    }
+
+    public Auto(double kapacitaNadrze){
+        this.ojazdene = false;
+        this.kapacitaNadrze= kapacitaNadrze;
+        this.stavNadrze = 50;
     }
 
     public String stav(){
